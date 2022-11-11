@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ background-image: url(../../../../../../../LUCIFER/VID_20210925_101628_909_2021-09-25-10-25-07-915.png); background-repeat: no-repeat;
+        background-size: cover;}
+    </style>
+    <style>
+        img{
+            width: 320px;
+            height: 200px;
+            position: absolute;
+        }
+        .container{
+            width: 350px; height: 200px;
+            position: relative;
+            margin-top: 15%;margin-left: 40%;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            transform: rotateX(-10deg) rotateZ(-10deg);
+            animation: ror 20s linear infinite;
+        }
+        @keyframes ror{
+            50%{transform: rotateX(30deg);}
+            80%{transform: rotateX(-30deg);}
+        }
+        .images{
+            width: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            animation: rotate 20s linear infinite; 
+        }
+        @keyframes rotate{
+            from{
+
+            }
+            to{
+                transform:matrix3d(360deg);
+            }
+        }
+        
+   
+
+        
+        img:nth-child(1){
+            transform: rotateY(60deg) translateZ(300px);
+        }
+        img:nth-child(2){
+            transform: rotateY(120deg) translateZ(300px);
+        }
+        img:nth-child(3){
+            transform: rotateY(180deg) translateZ(300px);
+        }
+        img:nth-child(4){
+            transform: rotateY(240deg) translateZ(300px);
+        }
+        img:nth-child(5){
+            transform: rotateY(300deg) translateZ(300px);
+        }
+        img:nth-child(6){
+            transform: rotateY(360deg) translateZ(300px);
+        }
+        img:hover{width: 340px;
+        height: 220px;cursor: pointer;}
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="container">
+        <div class="images">
+            <img src="../../../../Public/Images/Bike 1.jpeg" alt="" srcset="">
+            <img src="../../../../Public/Images/Bike 2.jpeg" alt="" srcset="">
+            <img src="../../../../Public/Images/Bike 3.jpeg" alt="" srcset="">
+            <img src="../../../../Public/Images/Bike 4.jpeg" alt="" srcset="">
+            <img src="../../../../Public/Images/Bike 5.jpeg" alt="" srcset="">
+            <img src="../../../../Public/Images/Bike 6.jpeg" alt="" srcset="">
+        </div>
+    </div>
+</body>
+</html>
