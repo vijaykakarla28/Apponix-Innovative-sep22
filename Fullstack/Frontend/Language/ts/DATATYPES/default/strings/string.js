@@ -1,0 +1,10 @@
+var data1 = "hello";
+console.log(data1);
+var data2 = 'hello';
+console.log(data2);
+var c = 20;
+var data3 = "sum of c".concat(c);
+document.getElementById('root').innerHTML = data3;
+console.log(data3);
+var me2 = new String('Hello');
+console.log(me2);
