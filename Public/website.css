@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.5)50%, rgb(0, 0, 0, 0.5)50%), url(../../../../1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    color: aliceblue;
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: orange;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu {
+    color:orange;
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+.root{
+    color: olive;
+    animation: blink 2s steps(1,end) infinite;
+
+}
+
+@keyframes blink{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+    
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+      color: #ff7200;
+}
