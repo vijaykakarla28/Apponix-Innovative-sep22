@@ -1,0 +1,14 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "learning purpose"
+  },
+  "author": "vijay",
+  "license": "ISC",
+  "dependencies": {
+    "clock": "^1.0.2"
+  }
+}
