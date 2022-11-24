@@ -1,13 +1,13 @@
 import { Carousel } from "react-bootstrap"
-import img1 from '../../images/img1.jpg'
-import img2 from '../../images/img2.jpg'
-import img3 from '../../images/img3.jpg'
+import img1 from '../../images/1.jpeg'
+import img2 from '../../images/2.jpeg'
+import img3 from '../../images/3.jpeg'
 interface IMycarousel { }
 export const Mycarousel: React.FC<IMycarousel> = (props) => {
   return <>
     <Carousel>
       <Carousel.Item>
-        <img height='400px' width='100%'
+        <img height='450px' width='100%'
           className="d-block w-100"
           src={img1}
           alt="First slide"
@@ -18,7 +18,7 @@ export const Mycarousel: React.FC<IMycarousel> = (props) => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img height='400px' width='100%'
+        <img height='450px' width='100%'
           className="d-block w-100"
           src={img2}
           alt="Second slide"
@@ -30,7 +30,7 @@ export const Mycarousel: React.FC<IMycarousel> = (props) => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img height='400px' width='100%'
+        <img height='450px' width='100%'
           className="d-block w-100"
           src={img3}
           alt="Third slide"

@@ -15,6 +15,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
+
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
 }
@@ -60,7 +61,7 @@ const handleExpandClick = () => {
       <CardMedia
         component="img"
         height="194"
-        image="/static/images/cards/paella.jpg"
+        image={props.img}
         alt="Paella dish"
       />
       <CardContent>

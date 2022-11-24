@@ -1,2 +1,3 @@
-export * "./Contact/Contact"
-export * "./Home/Home"
+export * from './Home/Home'
+export * from './Contact/Contact'
+
