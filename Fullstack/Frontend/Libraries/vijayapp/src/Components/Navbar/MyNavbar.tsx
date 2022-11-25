@@ -9,7 +9,7 @@ export const MyNavbar:React.FC<IMyNavbar>=(props)=>{
 
     <Navbar bg="danger" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">MY SHOPPE</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,19 +18,19 @@ export const MyNavbar:React.FC<IMyNavbar>=(props)=>{
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link href="#action2">Contact</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action3">Feedback</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
-                Another action
+                Settings
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
-                Something else here
+                Report
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" disabled>
-              Link
+              Website
             </Nav.Link>
           </Nav>
           <Form className="d-flex">

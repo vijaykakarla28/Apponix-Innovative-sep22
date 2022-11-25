@@ -2,6 +2,7 @@ import { Carousel } from "react-bootstrap"
 import img1 from '../../images/1.jpeg'
 import img2 from '../../images/2.jpeg'
 import img3 from '../../images/3.jpeg'
+import './mycss.css'
 interface IMycarousel { }
 export const Mycarousel: React.FC<IMycarousel> = (props) => {
   return <>
@@ -13,8 +14,8 @@ export const Mycarousel: React.FC<IMycarousel> = (props) => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Sony Headset</h3>
+          <p> *It Comes with 14mm bass booster drives* </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -25,8 +26,8 @@ export const Mycarousel: React.FC<IMycarousel> = (props) => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Samsung smart Watch</h3>
+          <p>It has bluetooth calling feature</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -37,10 +38,8 @@ export const Mycarousel: React.FC<IMycarousel> = (props) => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Fastrack Wrist Watches</h3>
+          <p>Fastrack watches comes with premium quality </p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
