@@ -9,7 +9,7 @@ export const Contact = () => {
    useEffect(()=>{
     flipkartdata().then((a)=>{
         
-        return setPro;{a};
+        return <>setPro;{a};</>
     })
    },[])
     console.log(pro)

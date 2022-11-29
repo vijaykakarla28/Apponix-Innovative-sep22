@@ -1,21 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { About, Contact, Home, Jewlry, Mylogin } from './Pages'
+import { Layout } from './Pages/Layout'
+import { Mytest } from './Pages/Test/Mytest'
 
-import { Contact, Home } from './Pages'
-import { Jewlry } from './Pages/Jewlry/Jewlry'
-import Drawer, {  }  from './Components/Drawer2/Drawer'
-import { BottomNavigation } from '@mui/material'
+
 
 export const App = () => {
   return (<>
     <Router>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/contact' element={<Contact />}/>
-        <Route path='/about' element={<h1>Hello</h1>}/>
-        <Route path='/jewlry' element={<Jewlry/>}/>
-        <Route path='/drawer' element={<Drawer/>}/>
-        <Route path='/bottomnav' element={<BottomNavigation/>}/>
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/jewlry' element={<Jewlry />} />
+          <Route path='/mylogin' element={<Mylogin />} />
+          <Route path='/test' element={<Mytest/>}/>
+        </Routes>
+      </Layout>
     </Router>
   </>
-  )}
+  )
+}

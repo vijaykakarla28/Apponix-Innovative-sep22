@@ -25,19 +25,6 @@ export const Home = () => {
                 alignItems="stretch"
             >
 
-                <MyNavbar />
-
-
-
-            </Grid>
-
-            <Grid
-                container
-                direction="column"
-                justifyContent="center"
-                alignItems="stretch"
-            >
-
                 <Mycarousel />
             </Grid>
             <br />
