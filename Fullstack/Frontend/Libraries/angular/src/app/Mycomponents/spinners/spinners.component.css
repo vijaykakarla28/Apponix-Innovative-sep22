@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.spinner-grow{
+    object-position: center;
+    background-position-x: center;
+    background-position-y: center;
+}

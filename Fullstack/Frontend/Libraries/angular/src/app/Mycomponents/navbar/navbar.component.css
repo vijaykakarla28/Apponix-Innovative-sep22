@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    width: 100%;
+    height: 80px;
+    background-image: url(../../../assets/images/7.jpeg);
+    background-blend-mode:overlay ;
+
+}
+.navbar-brand{
+    color: aliceblue;
+}
+
+.navbar-brand:hover{
+    color: orange;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+.nav-link:hover{
+    color: orange;
+}
+
+.dropdown-menu{
+    color: aliceblue;
+}
+
+.dropdown-menu:hover{
+    color: orange;
+}
+
+
