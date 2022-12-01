@@ -11,6 +11,8 @@ import { CarouselsComponent } from './Mycomponents/carousels/carousels.component
 import { ButtonComponent } from './Mycomponents/button/button.component';
 import { SpinnersComponent } from './Mycomponents/spinners/spinners.component';
 import { BadgesComponent } from './Mycomponents/badges/badges.component';
+import { PaginationComponent } from './Mycomponents/pagination/pagination.component';
+import { CloseComponent } from './Mycomponents/close/close.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { BadgesComponent } from './Mycomponents/badges/badges.component';
     CarouselsComponent,
     ButtonComponent,
     SpinnersComponent,
-    BadgesComponent
+    BadgesComponent,
+    PaginationComponent,
+    CloseComponent
   ],
   imports: [
     BrowserModule,

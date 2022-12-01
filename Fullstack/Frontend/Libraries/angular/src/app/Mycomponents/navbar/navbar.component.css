@@ -5,24 +5,32 @@
 .container-fluid{
     width: 100%;
     height: 80px;
-    background-image: url(../../../assets/images/7.jpeg);
+    background-color: blue;
     background-blend-mode:overlay ;
 
 }
 .navbar-brand{
     color: aliceblue;
+    font-weight: bold;
+    font-style: oblique;
+    shape-margin: 20px;
 }
 
 .navbar-brand:hover{
-    color: orange;
+    color: rgb(7, 7, 7);
+    background-color: yellow;
+    background-position: center;
 }
 
 .nav-link{
     color: aliceblue;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .nav-link:hover{
-    color: orange;
+    color: rgb(10, 10, 10);
+    background-color: green;
 }
 
 .dropdown-menu{
@@ -30,7 +38,15 @@
 }
 
 .dropdown-menu:hover{
-    color: orange;
+    color: rgb(5, 5, 4);
 }
 
+.dropdown-item{
+    color: white;
+    background-color:yellowgreen ;
+}
 
+.dropdown-item:hover{
+    color: black;
+    background-color: red;
+}

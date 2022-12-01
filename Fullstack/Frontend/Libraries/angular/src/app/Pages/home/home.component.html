@@ -3,28 +3,27 @@
         <app-navbar></app-navbar>
     </div>
     <br>
-    <div  class="row">
-        <app-button></app-button>
-    </div>
-    <br>
-    <div class="row">
-        <app-spinners></app-spinners>
-    </div>
-    <br>
-    <div class="row">
-        <app-badges></app-badges>
-    </div>
-    <br>
     <div class="row">
         <app-carousels></app-carousels>
     </div>
     <br>
      <div class="row">
-        <div class="col"><app-cards></app-cards></div>
+        <div class="col"><app-cards [img1]="img1" [title]="title1" [text]="text1" [btn]="btn1"></app-cards></div>
+        <div class="col"><app-cards [img1]="img2" [title]="title2" [text]="text2" [btn]="btn2"></app-cards></div>
+        <div class="col"><app-cards [img1]="img3" [title]="title3" [text]="text3" [btn]="btn3"></app-cards></div>
         <br>
-        <div class="col"><app-cards></app-cards></div>
-        <br>
-        <div class="col"><app-cards></app-cards></div>
+        <div class="col"><app-cards [img1]="img4" [title]="title4" [text]="text4" [btn]="btn4"></app-cards></div>
+        <div class="col"><app-cards [img1]="img5" [title]="title5" [text]="text5" [btn]="btn5"></app-cards></div>
+        <div class="col"><app-cards [img1]="img6" [title]="title6" [text]="text6" [btn]="btn6"></app-cards></div>
+     </div>
+     <br>
+     <div class="row">
+        <div class="col"></div>
+        <div class="col"><app-pagination></app-pagination></div>
+        <div class="col"></div>
+     </div>
+     <div>
+        <app-close></app-close>
      </div>
 </div>
 
