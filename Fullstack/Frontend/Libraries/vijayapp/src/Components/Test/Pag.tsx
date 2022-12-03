@@ -1,10 +1,11 @@
 import Pagination from 'react-bootstrap/Pagination';
+import './mycss.css'
 
 interface IPag{}
-export const Pag:React.FC<{}>=()=>{
+export const Pag:React.FC<IPag>=()=>{
 
   return (<>
-  <Pagination>
+  <Pagination className='pag' >
       <Pagination.First />
       <Pagination.Prev />
       <Pagination.Item>{1}</Pagination.Item>

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: violet;
+    font-family: 'Rubik Distressed', cursive;
+}
+
+.card{
+    background-color: black;
+
+}
+.cardheader{
+    color: orangered;
+    text-shadow: 2px solid black;
+    font-family: 'Caveat', cursive;
+    background-color: yellow;
+ 
+}
+.cardmedia{
+    color: yellow;
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.mb-3{
+    color: orangered;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    background-image: url(../../images/10.jpeg);
+    border-radius: 15px;
+    border-color: skyblue;
+    box-shadow: 25px solid black;
+}
+
+
+.cnc{
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.cnc:hover{
+    color: black;
+    background-color: orange;
+}
+
+.drawer{
+    color: red;
+    background-color: yellow;
+}

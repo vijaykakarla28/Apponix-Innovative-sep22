@@ -1,5 +1,6 @@
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
 import { Link } from "react-router-dom"
+import './mycss.css'
 
 
 
@@ -9,7 +10,7 @@ export const MyNavbar: React.FC<IMyNavbar> = (props) => {
 
 
 
-    <Navbar bg="light" expand="xl">
+    <Navbar className="nav" >
       <Container>
         <Navbar.Brand href="#home">My Shoppe</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

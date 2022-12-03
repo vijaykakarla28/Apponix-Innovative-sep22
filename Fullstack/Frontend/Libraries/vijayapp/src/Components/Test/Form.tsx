@@ -1,7 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import './mycss.css'
 
-export function BasicExample() {
+export default function BasicExample() {
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -11,7 +12,6 @@ export function BasicExample() {
           We'll never share your email with anyone else.
         </Form.Text>
       </Form.Group>
-
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" placeholder="Password" />
@@ -19,11 +19,10 @@ export function BasicExample() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button variant="danger" type="submit">
+      <Button className='cnc' type="submit">
         Submit
       </Button>
     </Form>
   );
 }
 
-export default BasicExample;

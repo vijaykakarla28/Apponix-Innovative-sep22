@@ -1,35 +1,43 @@
 import { Container, Grid } from "@mui/material"
-import { Pag } from "../../Components/Test/Pag"
-import { Cards } from "../../Components/Test/Cards"
-import { Navbar2 } from "../../Components/Test/Navbar2"
-import img6 from "../../images/6.jpg"
+import { Cards  , Pag  } from "../../Components/Test"
 import img7 from "../../images/7.jpg"
 import img8 from "../../images/8.jpeg"
 import img9 from "../../images/9.jpg"
 import Form from "../../Components/Test/Form"
 import Close from "../../Components/Test/Close"
-import { red } from "@mui/material/colors"
 import FloatingActionButtons from "../../Components/Test/Floating-action-button"
+import BottomNav from "../../Components/Test/BottomNav"
+import Drawer from "../../Components/Test/Drawer"
+import SearchAppBar from "../../Components/Test/SearchAppBar"
 
 
 
 export const Mytest = () => {
     return (<>
         <Container maxWidth="xl">
+        
             <Grid container
                 direction="column"
                 justifyContent="center"
                 alignItems="stretch"
             >
-                <Navbar2 />
+                <SearchAppBar />
             </Grid>
             <br />
-         
             <Grid
+            container
+            direction="column"
+            justifyContent="right"
+            alignItems="end"
+            >
+                <Drawer/>
+            </Grid>
+         <br />
+            <Grid 
                 container
                 direction="row"
                 justifyContent="space-evenly"
-                alignItems="stretch"
+                alignItems="center"
             >
                 <Cards img={img7}  />
                 <Cards img={img8}  />
@@ -37,7 +45,7 @@ export const Mytest = () => {
                 
             </Grid>
             <br />
-            <Grid
+            <Grid style={{width: '100%'}}
             container
             direction="row"
             justifyContent="center"
@@ -54,7 +62,7 @@ export const Mytest = () => {
            <Form />
             </Grid>
             <br />
-            <Grid
+            <Grid 
             container
             direction="row"
             justifyContent="center"
@@ -63,11 +71,19 @@ export const Mytest = () => {
             <Pag/>
             </Grid>
             <br />
-           
             <Grid 
             bgcolor="black">
                 <Close />
 
+            </Grid>
+            <br />
+            <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="stretch"
+            >
+                <BottomNav/>
             </Grid>
            
         </Container>
