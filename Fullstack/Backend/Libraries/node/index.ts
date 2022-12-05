@@ -1,1 +1,0 @@
-var nodemailer=require('nodemailer')
