@@ -1,1 +1,1 @@
-console.log("my path---",__dirname)
+console.log("my path---",'__dirname')
