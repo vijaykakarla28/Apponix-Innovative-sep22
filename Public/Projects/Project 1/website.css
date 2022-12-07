@@ -33,6 +33,11 @@
     margin-top: 5px;
 }
 
+.logo:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
 .menu{
     width: 400px;
     float: left;
@@ -189,6 +194,7 @@ ul li a:hover{
     margin: 2px;
     padding: 8px;
 }
+
 
 .form input{
     width: 240px;

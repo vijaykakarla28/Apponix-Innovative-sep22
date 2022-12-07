@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://img.freepik.com/premium-vector/architecture-blueprint-background-paper-art-style_1168-479.jpg?w=2000);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration:none ;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+}
+
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: rgb(233, 80, 25);
+    position: absolute ;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+
+.navbar ul li:hover::after{
+width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.content h1:hover{
+    color: orangered;
+    transition: 0.6s;
+}
+
+.content p{
+    margin: 20px;
+    font-weight: 100px;
+    line-height: 25px;
+    font-size:25px ;
+    font-family: 'Courgette', cursive;
+}
+
+.content p:hover{
+    color: orangered;
+    transition: 0.6s;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(232, 80, 24);
+    background: transparent;
+    color: white;
+    cursor:pointer ;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Russo One', sans-serif;
+}
+
+span{
+    background:rgb(245, 80, 20);
+    height: 100%;
+    width: 0;
+    border-radius:25px ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.footer{
+    margin-top:5px ;
+    width: 100%;
+    padding: 150px 15%;
+    background-image: linear-gradient(rgba(0,0,0,0.5)rgba(0,0,0,0.5))url(https://wallpaperaccess.com/full/2704353.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight:300 ;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: 'Lobster', cursive;
+}
+
+.col-1 a{
+    display: block;
+    text-decoration:none ;
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Courgette', cursive;
+}
+.col-3 p{
+    font-family: 'Courgette', cursive;
+}
+
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius:20px ;
+    text-align: center;
+    margin: 10px 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: 2px solid black;
+    font-family: 'Courgette', cursive;
+}
+form input:hover{
+    color: black;
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+form button{
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Courgette', cursive;
+}
+form button:hover{
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+
+}
