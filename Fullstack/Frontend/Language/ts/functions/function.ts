@@ -10,3 +10,4 @@ function marriage(gifts){
 console.log(marriage('bike'))
 console.log(marriage('refrigirator'))
 console.log(marriage('mobile'))
+

@@ -4,3 +4,4 @@ c=30
 console.log(c)
 var c
 console.log(b)
+
