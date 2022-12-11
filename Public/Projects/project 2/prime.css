@@ -221,7 +221,7 @@ Footer---------------------------------------------------------
     content: "";
     height: 3px;
     width: 0;
-    background: rgb(233, 80, 25);
+    background: green;
     position: absolute ;
     left: 0;
     bottom: -15px;
@@ -242,7 +242,7 @@ Footer---------------------------------------------------------
 }
 
 .col-1 a:hover{
-    color: orangered;
+    color: orchid;
     transition-duration: 0.5s;
 }
 .col-3 p{
@@ -278,7 +278,7 @@ form button{
     font-family: 'Courgette', cursive;
 }
 form button:hover{
-    background-color: orangered;
+    background-color: #ffc107;
     transition: 0.5s;
 }
 

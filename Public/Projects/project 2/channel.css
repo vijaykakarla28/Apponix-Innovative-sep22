@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.cointainer{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(https://img.freepik.com/premium-vector/workers-building-houses-with-cranes-construction-sites_353206-3.jpg?w=2000);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+
+
+
+.material-symbols-outlined {
+    color: #fff;
+  font-variation-settings:
+  'FILL' 100,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+
+}
+
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 22px;
+    font-family: 'Lobster', cursive;
+}
+nav ul li a:hover{
+    color: #ffc107;
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 5px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffc107;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+width: 100%;
+}
+
+.text-box{
+color: #fff;
+position: absolute;
+bottom: 8%;
+}
+.text-box p{
+    font-size: 30px;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbyY_Kt5CFBDNVdP0Odz2HhM3PFMwIstjQDg&usqp=CAU);
+    -webkit-background-clip: text ;
+    background-position: 0 0;
+    animation: back 22s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h1{
+    font-size: 200px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_v8SC62PcM0BWFR7PqMBSh_V696sxVFnBQ&usqp=CAU);
+    -webkit-background-clip: text ;
+    background-position: 0 0;
+    animation: back 22s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #fff;
+    background: url(https://i.pinimg.com/originals/9f/42/50/9f42509b4a5a104a1f89796797f04408.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: for 20s linear infinite;
+}
+
+@keyframes for{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box .row{
+    display:flex ;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border:2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.text-box a:hover{
+    color: black;
+    background-color:#ffc107 ;
+    transition: 0.5s;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+.social-icons{
+    color: #fff;
+    position: relative;
+    right: 5%;
+    bottom: 8%;
+}
+
+.social-icons i{
+    color: #fff;
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+
+}
