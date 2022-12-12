@@ -5,6 +5,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap'); 
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); 
   @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap'); 
+   @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap'); 
 
 * {
     padding: 0;
@@ -92,7 +93,7 @@ p {
     font-size: 20px;
     color: gray;
     padding-bottom: 15px;
-    font-family: 'Cookie', cursive;
+    font-family: 'Space Grotesk', sans-serif;
 
 }
 
@@ -525,7 +526,7 @@ footer h4{
     padding-top: 15px;
 }
 footer p{
-    font-size: 18px;
+    font-size: 14px;
     margin: 0 0 8px 0;
 }
 footer a{
@@ -533,6 +534,7 @@ footer a{
     text-decoration: none;
     color: #222;
     margin-bottom: 10px;
+    font-family: 'Carter One', cursive;
 }
 footer .follow{
     margin-top: 20px;
