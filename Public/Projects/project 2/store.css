@@ -30,6 +30,7 @@
 
 .nav ul li {
     font-weight: bold;
+    cursor: pointer;
     font-size: 18px;
     align-items: center;
     justify-content: right;

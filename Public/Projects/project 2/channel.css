@@ -122,6 +122,7 @@ bottom: 8%;
 
 .text-box h3{
     font-size: 25px;
+    word-spacing: 15px;
     font-weight: 500;
     color: transparent;
     -webkit-text-stroke: 0.5px #fff;
