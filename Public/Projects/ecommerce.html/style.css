@@ -129,22 +129,21 @@
      font-family: 'Permanent Marker', cursive;
  }
 
- #navbar li a {
+ #navbar li{
      text-decoration: none;
-     font-weight: bold;
      color: black;
      font-size: 16px;
      text-decoration: none;
      transition: 0.3s ease;
  }
 
- #navbar li a:hover {
+ #navbar li:hover {
      color: #088178;
      width: 100%;
  }
 
- #navbar li a:hover,
- #navbar li a.active {
+ #navbar li:hover,
+ #navbar li.active {
      color: #088178;
  }
 
@@ -152,8 +151,8 @@
      right: 0px;
  }
 
- #navbar li a.active::after,
- #navbar li a:hover::after {
+ #navbar li.active::after,
+ #navbar li:hover::after {
      content: "";
      width: 50%;
      height: 4px;

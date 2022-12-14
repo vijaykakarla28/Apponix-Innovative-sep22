@@ -4,7 +4,7 @@ MongodbClient.connect(url,(err:any,db:any)=>{
     if(err)throw err
     console.log('db connected')
     var dbo=db.db('testDB')
-    var vijay={name:'vijay',chocolate:'dairymilk',hero:'mahesh'}
+    var vijay={name:'kalyan',chocolate:'5star',hero:'pavan kalyan'}
   dbo.collection('test-student').insertOne(vijay,(err:any,res:any)=>{
     if(err) throw err
     console.log('insert data',res)
