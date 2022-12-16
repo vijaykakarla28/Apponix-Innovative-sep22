@@ -697,6 +697,13 @@
  }
 
 
+ /*------------About Page--------------*/
+
+ #page-header .about-header{
+    background-image: url(../../Images/img/about/banner.png);
+ }
+
+
 
  /*Start Media Query */
 
