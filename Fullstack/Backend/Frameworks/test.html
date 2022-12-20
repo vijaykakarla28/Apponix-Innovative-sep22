@@ -1,0 +1,7 @@
+<script>
+    async function myfunction(){
+        var a=fetch('http://localhost:8003/')
+        console.log(await(await a).json())
+    }
+    myfunction()
+</script>
