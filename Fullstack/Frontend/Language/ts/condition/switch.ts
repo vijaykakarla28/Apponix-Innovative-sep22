@@ -1,4 +1,4 @@
-function random(){
+function random (){
     var myran = Math.floor(Math.random()*7+1);
 
     switch(myran){
