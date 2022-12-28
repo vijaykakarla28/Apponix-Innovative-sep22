@@ -23,6 +23,9 @@ app.use(express.static(path.join(__dirname,'src/public/img')))
 app.use(express.static(path.join(__dirname,'src/video/waterfall')))
 
 app.use('/api',endpoint.homeRoute)
+app.use('/api',endpoint.register)
+
+
 
 app.route('/')
 .get((req:any,res:any)=>{
