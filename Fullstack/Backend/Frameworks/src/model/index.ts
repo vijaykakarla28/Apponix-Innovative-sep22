@@ -1,2 +1,2 @@
-var User=require('./schema/users.schema')
-module.exports={User}
+var UserRegInfo=require('./schema/users.schema')
+module.exports={UserRegInfo}

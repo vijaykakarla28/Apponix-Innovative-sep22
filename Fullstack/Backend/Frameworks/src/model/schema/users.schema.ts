@@ -2,11 +2,11 @@ import mongoose,{ Schema} from "mongoose";
 
 var userStructure=new Schema({
     name:String,
-    age:Number,
-    chocolate:String
+    email:String,
+    password:String
 })
 
-module.exports=mongoose.model('users',userStructure)
+module.exports=mongoose.model('usersRegInfo',userStructure)
 
 
 // interface IRemote{color:string,shape:string,buttons:number}
