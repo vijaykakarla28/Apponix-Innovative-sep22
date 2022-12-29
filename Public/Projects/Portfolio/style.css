@@ -291,8 +291,6 @@ header.sticky{
     align-items: center;
     margin-top: 5rem;
     text-align: center;
-<<<<<<< Updated upstream
-=======
 }
 
 .sub-box{
@@ -388,17 +386,13 @@ header.sticky{
     align-items: center;
     margin-top: 5rem;
     text-align: center;
->>>>>>> Stashed changes
     cursor: pointer;
 }
 
 .col{
     position: relative;
 }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 .col img{
     max-width: 100%;
     width: 550px;
@@ -406,31 +400,29 @@ header.sticky{
     object-fit: cover;
     border-radius: 12px;
 }
-<<<<<<< Updated upstream
 
 .layer{
     background:transparent;
-=======
+}
 .layer{
     background: transparent;
->>>>>>> Stashed changes
+
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     border-radius: 12px;
-<<<<<<< Updated upstream
     transition: all 0.4s ease;
 }
 .layer:hover{
     background: linear-gradient(rgba(0,0,0,0.5) 0% , #191919);
-=======
+
     transition: all 0.4s;
 }
 .layer:hover{
     background: linear-gradient(rgba(0,0,0,0.5)0% ,#191919);
->>>>>>> Stashed changes
+
 }
 .layer h3{
     position: absolute;
@@ -463,8 +455,6 @@ header.sticky{
 .layer:hover h5{
     bottom: 48%;
     opacity: 1;
-<<<<<<< Updated upstream
-=======
 }
 .service-content{
     display: grid;
@@ -497,5 +487,4 @@ header.sticky{
 }
 .s.s-four img{
     background: #faedce;
->>>>>>> Stashed changes
 }
