@@ -1,21 +1,47 @@
-<form method="post" action="http://localhost:8003/cars">
-    <label for="">name</label>
-    <input type="text" name="username">
-    <button>submit</button>
-</form>
-
-<form method="get" action="http://localhost:8003/cars">
-    <label for="">name</label>
-    <input type="text" name="username">
-    <button>submit</button>
-</form>
-
-<img src="http://localhost:8003/1.webp" alt="">
-
 <script>
-    async function myfunction(){
-        var a=fetch('http://localhost:8003/')
-        console.log(await(await a).json())
+    const handleSubmit = async(name,email,password)=>{
+        var myHeaders = new Headers()
+        myHeaders.append("Content-Type","application/x-www-form-urlencoded")
+
+        var urlencoded = new URLSearchParams()
+        urlencoded.append("name",name)
+        urlencoded.append("email",email)
+        urlencoded.append("password",password)
+
+        var requestOptions = {
+            method : 'POST',
+            headers : myHeaders,
+            body : urlencoded,
+            redirect : 'follow'
+        }
+
+        var res=fetch("http://localhost:8005/api/register",requestOptions)
+        return await(await res).text()
+        .catch(error => console.log('error',error))
     }
-    myfunction()
+    handleSubmit('vijay','vijay@gmail.com','73868').then((data)=>{console.log(data)})
 </script>
+
+
+
+<!-- 
+<video width="200px" height="200px" src="http://localhost:8003/1.mp4" controls></video>
+<form method="post" action="http://localhost:8003/cars">
+  <label for="">name</label>
+<input type="text" name="username">
+<button>submit</button>
+</form>
+<form method="get" action="http://localhost:8003/cars">
+  <label for="">name</label>
+<input type="text" name="username">
+<button>submit</button>
+</form>
+<img src="http://localhost:8003/1.jpeg" alt="">
+<script>
+  async  function myfun(){
+    var a=fetch('http://localhost:8003/')
+    
+    console.log(await(await a).json())
+    }
+    myfun()
+</script> -->

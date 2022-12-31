@@ -3,6 +3,7 @@ import { About, Contact, Home, Jewlry, Mylogin } from './Pages'
 import { Layout } from './Pages/Layout'
 import { Mytest } from './Pages/Test/Mytest'
 import { Homepage } from './Pages/Homepage2/Homepage'
+import { Register } from './Pages/Auth/Register/Register'
 
 
 export const App = () => {
@@ -17,6 +18,7 @@ export const App = () => {
           <Route path='/mylogin' element={<Mylogin />} />
           <Route path='/test' element={<Mytest/>}/>
           <Route path='/home2' element={<Homepage/>} />
+          <Route path='./register' element={<Register/>}/>
         </Routes>
       </Layout>
     </Router>
