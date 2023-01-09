@@ -11,6 +11,7 @@ var path=require('path')
 var ejs=require('ejs')
 var endpoint=require('./src/routes')
 app.set('view engine','ejs')
+var fileUpload= require('express-fileupload')
 app.set('views',path.join(__dirname,'src/views'))
 //parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended:false}))
@@ -21,7 +22,7 @@ app.use(cors())
 
 app.use(express.static(path.join(__dirname,'src/public/img')))
 app.use(express.static(path.join(__dirname,'src/video/waterfall')))
-
+app.use(fileUpload())
 app.use('/api',endpoint.homeRoute)
 app.use('/api',endpoint.register)
 app.use('api',endpoint.userlogin)

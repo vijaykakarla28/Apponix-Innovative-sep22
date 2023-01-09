@@ -1,2 +1,3 @@
 var UserRegInfo=require('./schema/users.schema')
-module.exports={UserRegInfo}
+var ProductInfo=require('./schema/productUpload.schema')
+module.exports={UserRegInfo,ProductInfo}
