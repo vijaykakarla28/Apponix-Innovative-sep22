@@ -1,6 +1,6 @@
 package lessons;
 
-public class Lessons_01_syntax {
+public class Lesson_01_syntax {
 String car="i am car";
 int money=50;
 	public static void main(String[] args) {
