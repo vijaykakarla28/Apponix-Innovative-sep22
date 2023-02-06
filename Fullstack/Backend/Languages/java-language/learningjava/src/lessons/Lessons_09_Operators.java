@@ -22,7 +22,7 @@ public class Lessons_09_Operators {
 		System.out.println(g);
 		
 		//Compare
-		//<=1 9>1
+		//<=1 9>=1
 		
 		//logial
 		//&& || !
