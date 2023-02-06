@@ -6,6 +6,7 @@ public class Lesson_05_datatypes {
 		// TODO Auto-generated method stub
 int num=10;
 float floatnum=10.5f;
+double doublenum=45.5; 
 char mychar='a';
 //in char u can only have one charector
 //make sure u give it in single quotes ''
