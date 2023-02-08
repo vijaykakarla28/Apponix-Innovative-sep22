@@ -10,3 +10,10 @@ System.out.print(a+b);
 	}
 
 }
+
+class check{
+	void pro() {
+		System.out.print("check");	
+	}
+	
+}
