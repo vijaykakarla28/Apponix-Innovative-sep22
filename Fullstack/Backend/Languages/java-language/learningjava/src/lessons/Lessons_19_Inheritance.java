@@ -13,6 +13,8 @@ public class Lessons_19_Inheritance {
 	}
 }
 
+//Single level inharitance
+
 class Apponix{
 	void classroom(){
 		System.out.println("i am working inheritance");
@@ -21,6 +23,8 @@ class Apponix{
 class vijay extends Apponix{
 
 }
+
+//Hirarical inheritance;
 class lucifer extends Apponix{
 
 }
