@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+  
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    }
+
+  body{
+    background:#000;
+    color: #fff;
+  }
+
+  .header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url("https://assets.nflxext.com/ffe/siteui/vlv3/d049a3bd-40ee-411b-9f16-d1def798d43b/d6aeb5a9-b14c-42d4-999e-c2f0d6c60f04/IN-en-20230313-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size:auto;
+    background-position:center;
+    padding: 5px 8%;
+    position: relative;
+    border-bottom: 8px solid #303030;
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0;
+  }
+
+  .logo{
+    width:210px;
+  }
+
+  nav button{
+    color: #FFF;
+    border-radius: 5px;
+  }
+
+  nav a{
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 3px 10px;
+  }
+
+  .language-btn .material-symbols-outlined{
+    margin-right: 5px;
+    text-decoration: none;
+  }
+
+  .language-btn img{
+    width: 10px;
+    margin-left: 10px;
+  }
+
+  .header-content{
+    position: absolute;
+    top: 40%;
+    left: 43.5%;
+    white-space: nowrap;
+    transform: translate(-50%,-40%);
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .header-content h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight:900;
+    max-width: 650px;
+  }
+
+  .header-content h3{
+    padding-top: 20px;
+    padding-left: 27%;
+    padding-bottom: 9px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .header-content p{
+    font-size: 20px;
+    padding-left: 20%;
+  }
+
+  .email-signup{
+    border-radius: 4px;
+    display:flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    padding-left: 6%;
+    margin-left: 90px;
+  }
+
+  .email-signup input{
+    padding: 20px 10px;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    color: #fff;
+    flex: 1;
+    border: 2px solid green;
+    border-radius: 7px;
+    outline: 0;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .email-signup button{
+    background: #db0001;
+    border-radius: 6px;
+    outline: 0;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 15px 30px;
+  }
+
+  /*----------------Features----------------*/
+
+  .features{
+    padding: 50px 5%;
+    font-size: 22px;
+  }
+
+  .row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 70px 0;
+    border-width: 100%;
+    border-bottom: 8px solid #303030;
+    border-width: 100%;
+  }
+
+  .text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+
+  .img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+  .img-col img{
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  .features h2{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom:20px;
+  }
+  .features p{
+    font-size: 25px;
+  }
+
+  /*---------Frequently Asked Questions--------*/
+  .faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .faq h2{
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+  /*------------FAQ---------------*/
+  .accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+  }
+  .accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+  }
+  .accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 900;
+    background: #303030;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+  }
+  label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+  }
+
+  input[type="radio"]{
+    display: none;
+  }
+
+  .accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition:max-height 0.5s, padding 0.5s ;
+  }
+
+  .accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+  }
+  .accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+  }
+
+  .faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+  }
+  .faq small{
+    font-size: 20px;
+  }
+
+  /*----------Footer------------*/
+  .footer{
+    padding: 50px 15% 10px;
+    border-top: 8px solid #303030;
+    color: #FFF;
+  }
+  .footer h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+  .footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  .footer .language-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+  }
+  .footer span{
+    text-decoration: underline;
+  }
+  .copyright-text{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  /*-----------Media Query------------*/
+
+  @media only screen and (max-width:600px) {
+    .header{
+      background-size: cover;
+      height: 520px;
+    }
+    .logo{
+      width: 120px;
+    }
+    nav a{
+      padding: 5px 10px;
+      text-decoration: none;
+    }
+    nav .language-btn{
+      padding: 4px 8px;
+    
+    }
+    nav .language-btn span{
+      display: none;
+    }
+    .header-content{
+      line-height: 5px;
+      position: unset;
+      white-space: pre-line;
+      transform: none;
+    }
+    .header-content h1{
+      line-height: 35px;
+      font-size: 30px;
+    }
+    .header-content h3{
+      padding-top: 5%;
+      white-space: nowrap;
+      font-size: 18px;
+      padding-left: 5%;
+    }
+    .header-content p{
+      font-size: 18px;
+      line-height: 28px;
+      padding-left: 5%;
+    }
+    .email-signup{
+      padding-left: 10%;
+      margin-left: 12%;
+      align-items: center;
+      display: block;
+    }
+    .email-signup input{
+      text-align: left;
+      padding: 10px 20px;
+      margin-right: 15%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .email-signup button{
+      padding-bottom: 10%;
+      margin-right: 20%;
+      white-space: pre-line;
+      font-size: 17px;
+      padding: 12px 17px;
+      border-radius: 5px;
+    }
+    .text-col, .img-col{
+      flex-basis: 100%;
+    }
+    .features h2{
+      font-size: 30px;
+      text-align: center;
+    }
+    .features p{
+      font-size: 15px;
+      text-align: center;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+      flex-direction: column-reverse;
+    }
+    .features .row{
+      padding: 10px 0;
+    }
+    .faq h2{
+      font-size: 20px;
+      text-align: center;
+    }
+    .accordian .content{
+      font-size: 14px;
+    }
+    .accordian li label{
+      padding: 10px;
+      font-size: 14px;
+    }
+    .footer{
+      white-space: nowrap;
+    }
+  }
